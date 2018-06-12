@@ -6,6 +6,3 @@ Ekta yadav-Controlling motor using zigbee,Requirement Elicitation,Content analys
 Mamatha.V- Front end designing using HTML,CSS and connectivity of Database with Xampp
 Anukriti-Predicting future prices,developing chatbot,API integration
 Lavanya-Database design,connecting database using xampp,help in front end desigining
-
-
-
