@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" style="height=100px; width=100px;"></div>
+    <script>
+      var map;
+      function initMap() {
+        var myLatLng= {lat: 12.9260308, lng: 77.6762463 };
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 15
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'myLatLng'
+          });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRHT7-HdIt3_Ek58Jivj3AMBFBdeosGuY&callback=initMap"
+    async defer></script>
+<!--Geocoding
+    https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
+<!--Geocoding ends-->
+  </body>
+</html>&callback=initMap"
+    async defer></script>
+  </body>
+</html>
